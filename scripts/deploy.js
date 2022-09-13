@@ -11,8 +11,9 @@ async function main() {
     await simpleStorage.deployed()
     console.log(`Deployed contact to: ${simpleStorage.address}`)
     if (network.config.chainId === 5 && process.env.ETHERSCAN_API_KEY) {
-      await simpleStorage.deployTransaction.wait(6) 
-      await verify(simpleStorage.address, [])
+        console.log("Waiting for block confirmations...")
+        await simpleStorage.deployTransaction.wait(6)
+        await verify(simpleStorage.address, [])
     }
     const currentValue = await simpleStorage.retrieve()
     console.log(`Current Value is: ${currentValue}`)
@@ -21,22 +22,21 @@ async function main() {
     await transactionResponse.wait(1)
     const updatedValue = await simpleStorage.retrieve()
     console.log(`Updated Value is: ${updatedValue}`)
-    
-  }
+}
 
 async function verify(contractAddress, args) {
     console.log("Verifying contract...")
     try {
-    await run("verify:verify", {
-        address: contractAddress,
-        constructorArguments: args,
-    })
+        await run("verify:verify", {
+            address: contractAddress,
+            constructorArguments: args,
+        })
     } catch (e) {
-      if (error.message.toLowerCase().includes("already verified")){
-        console.log("Already Verified")
-      } else {
-        console.log(e)
-      }
+        if (e.message.toLowerCase().includes("already verified")) {
+            console.log("Already Verified!")
+        } else {
+            console.log(e)
+        }
     }
 }
 
