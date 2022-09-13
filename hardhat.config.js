@@ -1,13 +1,14 @@
+require("@nomiclabs/hardhat-waffle")
 require("@nomicfoundation/hardhat-toolbox")
 require("dotenv").config()
 require("@nomiclabs/hardhat-etherscan")
 require("./tasks/block-number")
 require("hardhat-gas-reporter")
-
-const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
-const PRIVATE_KEY = process.env.PRIVATE_KEY
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
-const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
+require("solidity-coverage")
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "https://eth-goerli"
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "0xkey"
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "key"
+const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "key"
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
