@@ -13,6 +13,7 @@ npx hardhat test
 GAS_REPORT=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
+```
 
 # Getting Started
 
@@ -30,7 +31,7 @@ npx hardhat run scripts/deploy.js
 
 ## Quickstart
 
-```
+
 https://github.com/bchaindeveloper/hardhat-simple-storage.git
 cd hardhat-simple-storage
 yarn
