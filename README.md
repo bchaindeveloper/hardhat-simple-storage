@@ -2,6 +2,9 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
+![Screenshot](Screenshot.png)
+
+
 Try running some of the following tasks:
 
 ```shell
@@ -10,30 +13,6 @@ npx hardhat test
 GAS_REPORT=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
-```
-This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course.
-
-*[⌨️ (08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s)*
-
-[Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
-
-- [Hardhat Simple Storage](#hardhat-simple-storage)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-  - [Typescript](#typescript)
-- [Usage](#usage)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-  - [Estimate gas](#estimate-gas)
-  - [Local Deployment](#local-deployment)
-    - [Important localhost note](#important-localhost-note)
-  - [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-    - [Verify on etherscan](#verify-on-etherscan)
-- [Linting](#linting)
-- [Thank you!](#thank-you)
-
-This project is apart of the Hardhat FreeCodeCamp video.
 
 # Getting Started
 
@@ -52,26 +31,10 @@ This project is apart of the Hardhat FreeCodeCamp video.
 ## Quickstart
 
 ```
-git clone https://github.com/PatrickAlphaC/hardhat-simple-storage-fcc
-cd hardhat-simple-storage-fcc
+https://github.com/bchaindeveloper/hardhat-simple-storage.git
+cd hardhat-simple-storage
 yarn
 yarn hardhat
-```
-
-## Typescript
-
-For the typescript edition, run:
-
-```
-git checkout typescript
-```
-
-### Optional Gitpod
-
-If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PatrickAlphaC/hardhat-simple-storage-fcc)
-
 
 # Usage
 
@@ -164,3 +127,9 @@ yarn lint
 or, to fix: 
 ```
 yarn lint:fix
+
+## Credit:
+
+This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course:
+
+*[⌨️ (08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s)*
