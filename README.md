@@ -119,7 +119,7 @@ However, you can manual verify with:
 npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 ```
 
-# Linting
+## Linting
 
 To check linting / code formatting:
 ```
@@ -133,4 +133,4 @@ yarn lint:fix
 
 This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course:
 
-*[⌨️ (08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s)*
+(08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s
